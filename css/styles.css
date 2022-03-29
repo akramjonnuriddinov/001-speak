@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.woff2") format("woff2"),
+        url("../fonts/Inter-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-SemiBold.woff2") format("woff2"),
+        url("../fonts/Inter-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Bold.woff2") format("woff2"),
+        url("../fonts/Inter-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Medium.woff2") format("woff2"),
+        url("../fonts/Inter-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Arial", sans-serif;
+    background-color: #F9FDFFB2;
+}
+
+.container {
+    width: 100%;
+    max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+
+.header-container {
+    padding-right: 116px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 82px;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    width: 183px;
+    /* height: 36px; */
+    margin-right: 20px;
+}
+
+.sitenav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.sitenav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 213.5px;
+    padding-right: 213.5px;
+}
+
+.sitenav-list-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.sitenav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+}
+.header-btn-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header-btn-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.lang-img {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.lang-opt {
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.main-link {
+    padding: 12px 30px 13px 30px;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 19.2px;
+    border-radius: 12px;
+    background: linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%);
+}
+
+/* MAIN */
+.main-top-container {
+    background-image: url("../img/main-top-bg.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 689px 468px;
+    margin-bottom: 141px;
+}
+
+.main-top-content {
+    max-width: 644px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 189px;
+}
+
+.main-top-text {
+    color: #00B9B6;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+}
+
+.main-top-title {
+    color: #0E0E0F;
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 57.6px;
+}
+
+.app-container {
+    padding-right: 15px;
+    display: flex;
+    margin-bottom: 139.5px;
+}
+
+.app-img {
+    display: block;
+    margin-right: 50px;
+    box-shadow: 0px 4px 25px 0px #00B9B640;
+    border-radius: 24px;
+}
+
+.app-content {
+    max-width: 456px;
+    width: 100%;
+}
+
+.app-title {
+    margin: 0;
+    color: #0E0E0F;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38.4px;
+    width: 454px;
+    margin-bottom: 37px;
+}
+
+.app-logo-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+.app-item-title {
+    margin: 0;
+    font-weight: 600;
+    color: #00B9B6;
+    font-size: 24px;
+    line-height: 33.6px;
+    margin-bottom: 5px;
+}
+
+.app-item-text {
+    margin: 0;
+    width: 345px;
+    color: #333333;
+    font-size: 16px;
+    line-height: 22.4px;
+}
+
+.app-logo {
+    display: block;
+    margin-right: 20px;
+}
+
+.store-wrapper-img {
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.store-wrapper {
+    display: flex;
+}
+
+.store-wrapper-link {
+    display: inline-block;
+}
+
+.store-wrapper-link:first-child {
+    margin-right: 20px;
+}
+
+.team-title {
+    font-size: 32px;
+    line-height: 38.4px;
+    font-weight: 700;
+    color: #0E0E0F;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 55px;
+}
+
+.team-link-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 51px;
+}
+
+.team-link {
+    padding: 10px 30px;
+    display: inline-block;
+    color: #333333;
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0px 15px 25px 0px #0000000D;
+}
+
+.team-link:not(:last-child) {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.team-link:hover {
+    color: #00B9B6;
+}
+
+.team-link:active {
+    background: linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%);
+    color: #fff;
+}
+
+.team-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.team-list-item {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 15px 25px 0px #0000000D;
+}
+
+.team-list-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.team-item-img {
+    display: block;
+    height: 178px;
+    width: 178px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.team-item-name {
+    margin: 0;
+    color: #333333;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+    margin-bottom: 10px;
+}
+
+.team-item-grade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-item-star svg {
+    color: #FFA800;
+    cursor: pointer;
+}
+
+.team-item-star svg:hover {
+    opacity: 0.8;
+}
+
+.team-item-star svg:active {
+    opacity: 0.5;
+}
+
+
+.team-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-slider-item {
+    height: 6px;
+    width: 20px;
+    background-color: #00B9B640;
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.team-slider-item:not(:last-child) {
+    margin-right: 5px;
+}
+
+.team-slider-item:active {
+    background-color: #00B9B6;
+    width: 30px;
+}
